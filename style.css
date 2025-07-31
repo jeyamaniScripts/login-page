@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-size: 1rem;
+  text-align: center;
+  height: 100vh;
+  /* background: violet; */
+}
+.intro-content {
+  background-image: url("./assets/register.jpg");
+  min-height: 50vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: aqua; */
+  padding: 0 0.25em 2em;
+}
+.top-text {
+  order: -1;
+  font-weight: 0.626rem;
+  font-weight: 900;
+  padding: 2px;
+  border-top: 2px solid violet;
+  /* color: burlywood;
+   border-image: linear-gradient(to right, #ff731b, #ffa51d) 1; */
+}
+a {
+  color: blue;
+  text-align: start;
+}
+h1 + p {
+  margin: 0;
+}
+.bold-text {
+  /* font-weight: 70; */
+  font-size: ;
+}
+.person-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  order: -2;
+}
+.main-content > *,
+.intro-content > * {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
+  padding: 1em 2em;
+  align-items: center;
+  min-height: 50vh;
+}
+h2 {
+  padding: 0.5em;
+  /* color: aqua; */
+}
+h2 + h3,
+h3 + img + p {
+  /* margin-bottom: 5em; */
+  padding-bottom: 1em;
+}
+h3 + img + p {
+  text-align: start;
+}
+input,
+.btn {
+  /* width: 100%; */
+  padding: 1em;
+  /* margin-bottom: 2em; */
+  border: none;
+  border-bottom: gray 2px solid;
+  /* border-radius: 5px; */
+  transition: all 0.8s;
+}
+input:focus {
+  border: none;
+  border: gray 2px solid;
+}
+.btn:hover {
+  border: none;
+  border: gray 2px solid;
+}
+.info-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  /* margin-top:"" */
+}
+p {
+  line-height: 1.5rem;
+  font-size: 16px;
+}
+.head {
+  text-align: start;
+}
+span {
+  color: blueviolet;
+}
+.btn {
+  width: 100%;
+  background-color: blueviolet;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.fine-text {
+  padding-top: 10px;
+  font-size: 18px;
+}
+strong {
+  font-weight: 700;
+  color: black;
+  /* font-size: 20px; */
+}
+@media (min-width: 600px) {
+  body {
+    display: flex;
+  }
+  .intro-content,
+  .main-content {
+    /* min-width: 50vw; */
+    width: 50%;
+    min-height: 100vh;
+  }
+  .main-content {
+    justify-content: center;
+  }
+}
