@@ -5,14 +5,23 @@ body {
   margin: 0px;
   font-size: 1rem;
   text-align: center;
-  height: 100vh;
-  /* background: violet; */
+  /* height: 100vh; */
+}
+section {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  width: 100%;
+}
+a {
+  text-align: start;
 }
 .intro-content {
   background-image: url("./assets/register.jpg");
   min-height: 50vh;
   background-size: cover;
   background-position: center;
+  border: 1px solid;
   color: white;
   display: flex;
   flex-direction: column;
@@ -29,16 +38,12 @@ body {
   /* color: burlywood;
    border-image: linear-gradient(to right, #ff731b, #ffa51d) 1; */
 }
-a {
-  color: blue;
-  text-align: start;
-}
 h1 + p {
   margin: 0;
 }
 .bold-text {
   /* font-weight: 70; */
-  font-size: ;
+  /* font-size: ; */
 }
 .person-avatar {
   width: 100px;
@@ -54,7 +59,7 @@ h1 + p {
 .main-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   /* justify-content: center; */
   padding: 1em 2em;
   align-items: center;
@@ -72,23 +77,45 @@ h3 + img + p {
 h3 + img + p {
   text-align: start;
 }
+.form-group {
+  position: relative;
+  border-bottom: 1px solid black;
+}
 input,
 .btn {
-  /* width: 100%; */
+  width: 100%;
   padding: 1em;
   /* margin-bottom: 2em; */
   border: none;
-  border-bottom: gray 2px solid;
-  /* border-radius: 5px; */
-  transition: all 0.8s;
+  /* border: gray 2px solid; */
+  border-radius: 5px;
+  /* transition: all 0.8s; */
+  margin-left: 20px;
 }
 input:focus {
-  border: none;
-  border: gray 2px solid;
+  /* border: none; */
+  /* border: gray 2px solid; */
+  /* scale: 10px;
+  transform: scale(1.1); */
+}
+span {
+  color: blueviolet;
+}
+.btn {
+  width: 100%;
+  color: white;
+}
+.icons {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  /* border: 1px solid red; */
 }
 .btn:hover {
-  border: none;
-  border: gray 2px solid;
+  /* border: none; */
+  /* border: gray 2px solid;
+  scale: 10px;
+  transform: scale(1.1); */
 }
 .info-form {
   display: flex;
@@ -101,27 +128,26 @@ p {
   line-height: 1.5rem;
   font-size: 16px;
 }
-.head {
-  text-align: start;
-}
-span {
-  color: blueviolet;
-}
 .btn {
   width: 100%;
-  background-color: blueviolet;
+  background: linear-gradient(
+    to left,
+    rgb(138, 61, 226),
+    rgba(77, 15, 158, 0.282)
+  );
   border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
+  /* border-radius: 5px; */
+}
+.file-input {
+  border: 1px solid;
 }
 .fine-text {
+  text-align: start;
   padding-top: 10px;
-  font-size: 18px;
+  margin: none;
 }
 strong {
   font-weight: 700;
-  color: black;
   /* font-size: 20px; */
 }
 @media (min-width: 600px) {
