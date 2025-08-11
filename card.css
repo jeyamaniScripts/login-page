@@ -5,7 +5,9 @@ body {
   margin: 0px;
   font-size: 1rem;
   text-align: center;
-  /* height: 100vh; */
+  height: 100vh;
+  padding: 20px;
+  background:rgba(79, 79, 179, 0.892);
 }
 section {
   display: flex;
@@ -28,6 +30,8 @@ a {
   justify-content: center;
   /* background-color: aqua; */
   padding: 0 0.25em 2em;
+  border: 2px solid gray;
+  background-color: white;
 }
 .top-text {
   order: -1;
@@ -64,6 +68,10 @@ h1 + p {
   padding: 1em 2em;
   align-items: center;
   min-height: 50vh;
+  background: white;
+
+  border: 2px solid gray;
+  border-radius: 5px;
 }
 h2 {
   padding: 0.5em;
@@ -93,7 +101,7 @@ input,
   margin-left: 20px;
 }
 input:focus {
-  /* border: none; */
+  border: none;
   /* border: gray 2px solid; */
   /* scale: 10px;
   transform: scale(1.1); */
@@ -153,12 +161,15 @@ strong {
 @media (min-width: 600px) {
   body {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .intro-content,
   .main-content {
     /* min-width: 50vw; */
-    width: 50%;
-    min-height: 100vh;
+
+    width: 30%;
+    min-height: 60vh;
   }
   .main-content {
     justify-content: center;
